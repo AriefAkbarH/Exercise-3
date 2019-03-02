@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<!-- perhatikan bahwa internet harus aktif agar dapat mengakses data dari API -->
+  <head>
+    <meta charset="utf-8">
+    <title>Data People Starwars</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/search.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="javascript/ambilAPI.js"></script>  <!--ambil API dari web  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!--setting searchbox dengan jquery-->
+  </head>
+
+  <body>
+    <!-- search box -->
+    <div class="container h-100">
+      <div class="d-flex justify-content-center h-100">
+        <div class="searchbar">
+          <input class="search_input" type="text" name="" placeholder="Search...">
+          <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- table -->
+    <div class="container" style="padding:50px;">
+      <table class="table table-hover table-striped table-dark">
+        <thead>
+          <th scope="col">name</th>
+          <th scope="col">height</th>
+          <th scope="col">mass</th>
+          <th scope="col">hair</th>
+          <th scope="col">skin</th>
+          <th scope="col">eye</th>
+          <th scope="col">birth</th>
+          <th scope="col">gender</th>
+        </thead>
+        <tbody id='target'>
+          <tr></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </body>
+
+</html>
