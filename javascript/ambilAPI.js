@@ -19,7 +19,7 @@ axios
         $(".search_input").on("keyup", function() {
             var value = $(this).val().toLowerCase();
             $("#target tr").filter(function() {
-            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            $(this).toggle($(this).text().toLowerCase().includes(value) )
             });
         });
     });
